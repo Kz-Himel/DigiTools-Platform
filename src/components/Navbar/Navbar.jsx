@@ -63,9 +63,13 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-4xl font-bold bg-linear-to-l from-[#9514fa] to-[#4f39f6] bg-clip-text text-transparent">
-            DigiTools
-          </a>
+          <div className="logo">
+              <h1 className="text-4xl p-2 font-bold 
+                 bg-gradient-to-r from-[#9514fa] to-[#4f39f6] 
+                 bg-clip-text text-transparent">
+                  DigiTools
+              </h1>
+            </div>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="flex gap-8 px-1">
@@ -107,7 +111,7 @@ const Navbar = () => {
         <div className="navbar-end gap-4">
           <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
             <div className="indicator">
-              <LucideShoppingCart />
+              <LucideShoppingCart />{" "}
               <span className="badge badge-sm indicator-item">8</span>
             </div>
           </div>
