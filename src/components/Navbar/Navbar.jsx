@@ -107,7 +107,7 @@ const Navbar = () => {
         <div className="navbar-end gap-4">
           <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
             <div className="indicator">
-              <LucideShoppingCart />{" "}
+              <LucideShoppingCart />
               <span className="badge badge-sm indicator-item">8</span>
             </div>
           </div>
