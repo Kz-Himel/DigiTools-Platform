@@ -1,0 +1,94 @@
+[
+  {
+    "id": 1,
+    "name": "Entry-Level Resume Kit",
+    "description": "Essential templates and guides for students and freshers to kickstart their career.",
+    "price": 7,
+    "period": "one-time",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["15+ Professional templates", "Word & PDF formats", "Step-by-step guide"],
+    "image": "../src/assets/products/cv.png"
+  },
+  {
+    "id": 2,
+    "name": "Expert Resume Builder",
+    "description": "AI-powered resume builder with smart keyword suggestions for ATS success.",
+    "price": 24,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["Smart ATS scanner", "Custom cover letters", "Multi-language support"],
+    "image": "../src/assets/products/pro-cv.png"
+  },
+  {
+    "id": 3,
+    "name": "Job Hunter Bundle",
+    "description": "An all-in-one package to dominate your job search and ace every interview.",
+    "price": 55,
+    "period": "one-time",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": [
+      "Job application tracker",
+      "Mock interview videos",
+      "Salary negotiation tips"
+    ],
+    "image": "../src/assets/products/CareerBoostPack.png"
+  },
+  {
+    "id": 4,
+    "name": "Showcase Portfolio Pro",
+    "description": "Build a stunning personal brand website with our intuitive no-code editor.",
+    "price": 14,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["SEO optimization", "SSL certificate included", "Unlimited hosting"],
+    "image": "../src/assets/products/PortfolioWebsiteBuilder.png"
+  },
+  {
+    "id": 5,
+    "name": "Gig Economy Toolkit",
+    "description": "Streamline your freelance business with automated billing and client portals.",
+    "price": 35,
+    "period": "yearly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["Smart tax calculator", "Task kanban board", "Contract templates"],
+    "image": "../src/assets/products/FreelancerToolkit.png"
+  },
+  {
+    "id": 6,
+    "name": "Creative UI Assets",
+    "description": "A massive collection of premium UI kits, graphics, and high-quality design elements.",
+    "price": 45,
+    "period": "one-time",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["Vector illustrations", "3D icon library", "Sketch & Adobe XD files"],
+    "image": "../src/assets/products/design-tool.png"
+  },
+  {
+    "id": 7,
+    "name": "Full-Stack Dev Suite",
+    "description": "Curated collection of boilerplate code and UI components for modern developers.",
+    "price": 18,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["Next.js components", "Tailwind CSS presets", "Git hooks library"],
+    "image": "../src/assets/products/DeveloperProPack.png"
+  },
+  {
+    "id": 8,
+    "name": "Founder's SaaS Boilerplate",
+    "description": "The ultimate foundation for your next big idea with pre-built user management.",
+    "price": 129,
+    "period": "one-time",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["Stripe integration", "Admin control panel", "Email templates"],
+    "image": "../src/assets/products/Saas.png"
+  }
+]
