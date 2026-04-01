@@ -45,7 +45,7 @@ const Banner = () => {
           </div>
 
           {/* Right Side - Image */}
-          <div className="hero-right flex-1 w-full flex justify-center lg:justify-end">
+          <div className="hero-right flex-1 w-full max-h-[590px] flex justify-center lg:justify-end">
             <img 
               src={BannerImg} 
               alt="Banner" 

@@ -9,6 +9,7 @@ import Cart from './components/AllProducts/Cart'
 import GetStarted from './components/GetSatrted/GetStarted'
 import Pricing from './components/Pricing/Pricing';
 import ReadyToTransfrom from './components/ReadyToTransfrom/ReadyToTransfrom';
+import Footer from './components/Footer/Footer';
 
 const dataFetching = async () => {
   const res = await fetch("/data.json");
@@ -96,6 +97,9 @@ function App() {
 
   {/* Ready To Transform */}
   <ReadyToTransfrom />
+
+  {/* Footer */}
+  <Footer />
     </>
   )
 }
