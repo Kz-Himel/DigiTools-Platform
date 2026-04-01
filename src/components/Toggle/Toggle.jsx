@@ -1,6 +1,6 @@
 import React from "react";
 
-const ToggleTabs = ({ activeTab, setActiveTab, cartItem}) => {
+const Toggle = ({ activeTab, setActiveTab, cartItem}) => {
   return (
     <div className="mt-16">
 
@@ -52,4 +52,4 @@ const ToggleTabs = ({ activeTab, setActiveTab, cartItem}) => {
   );
 };
 
-export default ToggleTabs;
+export default Toggle;

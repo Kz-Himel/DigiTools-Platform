@@ -8,6 +8,7 @@ import Cards from './components/AllProducts/Cards';
 import Cart from './components/AllProducts/Cart'
 import GetStarted from './components/GetSatrted/GetStarted'
 import Pricing from './components/Pricing/Pricing';
+import ReadyToTransfrom from './components/ReadyToTransfrom/ReadyToTransfrom';
 
 const dataFetching = async () => {
   const res = await fetch("/data.json");
@@ -93,6 +94,8 @@ function App() {
   {/* Pricing */}
   <Pricing />
 
+  {/* Ready To Transform */}
+  <ReadyToTransfrom />
     </>
   )
 }
