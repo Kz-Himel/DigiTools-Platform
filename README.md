@@ -8,6 +8,7 @@ Tailwind CSS – Utility-first styling for responsive design
 DaisyUI – Ready-to-use UI components  
 Lucide-React – Clean and lightweight icons  
 React Toastify – Beautiful toast notifications  
+JSON - For product data
 
 ✨ Features  
 Premium Digital Tools Collection – Access a variety of useful tools for productivity and creativity.  
