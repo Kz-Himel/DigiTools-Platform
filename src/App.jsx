@@ -78,7 +78,9 @@ function App() {
       handleRemoveFromCart={(id) =>
         setCartItem(cartItem.filter((item) => item.id !== id))
       }
-      handleCheckout={() => alert("Checkout Successful")}
+      handleCheckout={() => {
+        setCartItem([]);
+      }}
     />
   )
 }

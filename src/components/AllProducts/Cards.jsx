@@ -12,6 +12,7 @@ const Cards = ({ products, handleAddToCart, cartItem }) => {
           item={item}
           handleAddToCart={handleAddToCart}
           cartItem={cartItem}
+          products={products}
         />
         ))
         }

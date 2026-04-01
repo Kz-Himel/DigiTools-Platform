@@ -72,7 +72,7 @@ const Card = ({ item, handleAddToCart  }) => {
 
         {/* Action Button */}
         <div className="mt-8">
-          <button type="button" 
+          <button type="button"
           onClick={() => {
             setIsBuyNow(true) 
             handleAddToCart(item)
