@@ -1,9 +1,9 @@
-import { LucideTrash2, ShoppingBag } from "lucide-react";
+import { ShoppingBag } from "lucide-react";
 import React from "react";
 
 const Cart = ({ cartItem, handleRemoveFromCart, handleCheckout }) => {
   return (
-    <div className="container mx-auto p-4 border border-neutral-100 rounded-2xl shadow-sm bg-white">
+    <div className="container mx-auto my-7 p-4 border border-neutral-100 rounded-2xl shadow-sm bg-white">
       <h2 className="text-2xl font-bold mb-4">Your Cart</h2>
       {cartItem.length === 0 ? (
         <div className="flex flex-col items-center justify-center py-20 px-4 text-center">
@@ -42,9 +42,9 @@ const Cart = ({ cartItem, handleRemoveFromCart, handleCheckout }) => {
               <div className="flex items-center gap-6">
                 <button
                   onClick={() => handleRemoveFromCart(item.id)}
-                  className="btn btn-ghost border-0 text-error hover:bg-error/10 hover:text-error rounded-full btn-circle"
+                  className="btn btn-ghost border-0 text-error hover:bg-error/10 hover:text-error rounded-[30px]"
                 >
-                  <LucideTrash2 size={20} />
+                  Remove
                 </button>
               </div>
             </div>

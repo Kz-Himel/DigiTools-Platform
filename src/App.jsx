@@ -1,11 +1,12 @@
 import './App.css'
+import { Suspense, useState, useEffect } from 'react';
 import Navbar from './components/Navbar/Navbar'
 import Banner from './components/Banner/Banner'
 import Stats from './components/Stats/Stats'
 import ToggleTabs from './components/Toggle/Toggle'
-import { Suspense, useState, useEffect } from 'react';
 import Cards from './components/AllProducts/Cards';
 import Cart from './components/AllProducts/Cart'
+import GetStarted from './components/GetSatrted/GetStarted'
 
 const dataFetching = async () => {
   const res = await fetch("/data.json");
@@ -84,6 +85,9 @@ function App() {
     />
   )
 }
+
+  {/* Get Started Section */}
+  <GetStarted />
     </>
   )
 }

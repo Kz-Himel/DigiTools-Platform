@@ -95,6 +95,14 @@ const Navbar = ({cartItem}) => {
                 href=""
                 className="text-base no-underline link hover:link-primary"
               >
+                Pricing
+              </a>
+            </li>
+            <li>
+              <a
+                href=""
+                className="text-base no-underline link hover:link-primary"
+              >
                 Testimonials
               </a>
             </li>
