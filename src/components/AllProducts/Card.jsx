@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 
-const Card = ({ item }) => {
+const Card = ({ item, handleAddToCart  }) => {
+
+  // For Buy now button
+  const [isBuyNow, setIsBuyNow] = useState(false);
   
+  // For Card badg
   const getTagStyles = (type) => {
-
     // Badg Style
     switch (type?.toLowerCase()) {
       case "new":
@@ -69,8 +72,12 @@ const Card = ({ item }) => {
 
         {/* Action Button */}
         <div className="mt-8">
-          <button className="btn border-0 btn-block rounded-full text-white bg-linear-to-l from-[#9514fa] to-[#4f39f6] hover:bg-linear-to-r transition-all font-bold">
-            Buy Now
+          <button 
+          onClick={() => {
+            setIsBuyNow(true) 
+            handleAddToCart(item)
+          }} className="btn border-0 btn-block rounded-full text-white bg-linear-to-l from-[#9514fa] to-[#4f39f6] hover:bg-linear-to-r transition-all font-bold">
+            {isBuyNow ? "Purchased" : "Buy Now"}
           </button>
         </div>
 

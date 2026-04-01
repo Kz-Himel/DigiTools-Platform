@@ -1,6 +1,6 @@
 import React from "react";
 
-const ToggleTabs = ({ activeTab, setActiveTab}) => {
+const ToggleTabs = ({ activeTab, setActiveTab, cartItem}) => {
   return (
     <div className="mt-16">
 
@@ -39,11 +39,11 @@ const ToggleTabs = ({ activeTab, setActiveTab}) => {
             onClick={() => setActiveTab("cart")}
             className={`px-7 py-4 rounded-full text-sm font-medium transition-all duration-200 ${
               activeTab === "cart"
-                ? "bg-linear-to-l from-[#9514fa] to-[#4f39f6] text-white!"
+                ? "bg-linear-to-l from-[#4f39f6] to-[#9514fa]  text-white!"
                 : "text-gray-600 hover:bg-base-300"
             }`}
           >
-            Cart ()
+            Cart ({cartItem.length})
           </button>
 
         </div>
