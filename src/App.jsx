@@ -7,6 +7,7 @@ import ToggleTabs from './components/Toggle/Toggle'
 import Cards from './components/AllProducts/Cards';
 import Cart from './components/AllProducts/Cart'
 import GetStarted from './components/GetSatrted/GetStarted'
+import Pricing from './components/Pricing/Pricing';
 
 const dataFetching = async () => {
   const res = await fetch("/data.json");
@@ -19,12 +20,12 @@ function App() {
 
   const [products, setProducts] = useState([]);
 
-  useEffect(() => {
-  dataFetching().then(data => {
-    const updated = data.map(item => ({ ...item, purchased: false }));
-    setProducts(updated);
-  });
-}, []);
+    useEffect(() => {
+    dataFetching().then(data => {
+      const updated = data.map(item => ({ ...item, purchased: false }));
+      setProducts(updated);
+    });
+  }, []);
 
   const handleAddToCart = (product) => {
 
@@ -40,8 +41,8 @@ function App() {
     prev.map(p =>
       p.id === product.id ? { ...p, purchased: true } : p
     )
-  );
-};
+    );
+  };
 
   return (
     <>
@@ -63,7 +64,7 @@ function App() {
 
     {/* All Products */}
     {
-  activeTab === "products" ? (
+    activeTab === "products" ? (
     <Suspense fallback={<div className="flex justify-center items-center min-h-screen">
       <h1 className="loading loading-ring loading-xl"></h1>
     </div>}>
@@ -72,8 +73,8 @@ function App() {
         handleAddToCart={handleAddToCart}
         cartItem={cartItem}
       />
-    </Suspense>
-  ) : (
+      </Suspense>
+    ) : (
     <Cart
       cartItem={cartItem}
       handleRemoveFromCart={(id) =>
@@ -82,12 +83,16 @@ function App() {
       handleCheckout={() => {
         setCartItem([]);
       }}
-    />
-  )
-}
+      />
+    )
+  }
 
-  {/* Get Started Section */}
+  {/* Get Started */}
   <GetStarted />
+
+  {/* Pricing */}
+  <Pricing />
+
     </>
   )
 }
