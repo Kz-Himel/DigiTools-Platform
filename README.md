@@ -1,12 +1,12 @@
 🌐 DigiTools Platform  
 
-DigiTools Platform is a modern web application that offers a collection of premium digital tools designed to boost productivity, creativity, and efficiency—all in one place. Explore, use, and manage digital tools seamlessly with an intuitive interface.  
+📄 DigiTools Platform is a modern web application that offers a collection of premium digital tools designed to boost productivity, creativity, and efficiency—all in one place. Explore, use, and manage digital tools seamlessly with an intuitive interface.  
 
 🛠️ Technologies Used  
-React.js + Vite – Fast, reactive, and modern frontend
-Tailwind CSS – Utility-first styling for responsive design
-DaisyUI – Ready-to-use UI components
-Lucide-React – Clean and lightweight icons
+React.js + Vite – Fast, reactive, and modern frontend  
+Tailwind CSS – Utility-first styling for responsive design  
+DaisyUI – Ready-to-use UI components  
+Lucide-React – Clean and lightweight icons  
 React Toastify – Beautiful toast notifications  
 
 ✨ Features  
