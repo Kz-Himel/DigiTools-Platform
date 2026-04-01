@@ -1,5 +1,7 @@
 import './App.css'
 import { Suspense, useState, useEffect } from 'react';
+import { ToastContainer } from "react-toastify";
+import { toast } from "react-toastify";
 import Navbar from './components/Navbar/Navbar'
 import Banner from './components/Banner/Banner'
 import Stats from './components/Stats/Stats'
@@ -33,10 +35,14 @@ function App() {
 
     // Check if any duplaicate card there
   const exists = cartItem.find(item => item.id === product.id);
-  if (exists) return;
+  if (exists) {
+    toast.warning("Already added to cart", { toastId: `duplicate-${product.id}` });
+    return;
+  }
 
   // Add card to carts
   setCartItem((prev) => [...prev, product]);
+  toast.success("Product added to cart");
 
   // If card is there then give a alert
   setProducts(prev =>
@@ -79,11 +85,13 @@ function App() {
     ) : (
     <Cart
       cartItem={cartItem}
-      handleRemoveFromCart={(id) =>
+      handleRemoveFromCart={(id) => {
         setCartItem(cartItem.filter((item) => item.id !== id))
-      }
+        toast.error("Removed from cart")
+      }}
       handleCheckout={() => {
-        setCartItem([]);
+        setCartItem([])
+        toast.success("Checkout successful");
       }}
       />
     )
@@ -100,6 +108,9 @@ function App() {
 
   {/* Footer */}
   <Footer />
+
+  {/* Toastify */}
+  <ToastContainer />
     </>
   )
 }
