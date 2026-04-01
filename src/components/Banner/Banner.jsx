@@ -21,8 +21,7 @@ const Banner = () => {
 
             {/* Heading */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-[#101727] leading-tight">
-              Supercharge Your <br className="hidden sm:block" />
-              Digital Workflow
+              Supercharge Your Digital Workflow
             </h1>
 
             {/* Description */}

@@ -64,11 +64,11 @@ const Navbar = ({cartItem}) => {
             </ul>
           </div>
           <div className="logo">
-              <h1 className="text-4xl p-2 font-bold 
+              <a className="text-4xl p-2 font-bold 
                  bg-gradient-to-r from-[#9514fa] to-[#4f39f6] 
-                 bg-clip-text text-transparent">
+                 bg-clip-text text-transparent cursor-pointer">
                   DigiTools
-              </h1>
+              </a>
             </div>
         </div>
         <div className="navbar-center hidden lg:flex">
@@ -76,7 +76,7 @@ const Navbar = ({cartItem}) => {
             <li>
               <a
                 href=""
-                className="text-base no-underline link hover:link-primary"
+                className="text-base font-bold no-underline link hover:link-primary"
               >
                 Products
               </a>
@@ -85,7 +85,7 @@ const Navbar = ({cartItem}) => {
             <li>
               <a
                 href=""
-                className="text-base no-underline link hover:link-primary"
+                className="text-base font-bold no-underline link hover:link-primary"
               >
                 Features
               </a>
@@ -93,7 +93,7 @@ const Navbar = ({cartItem}) => {
             <li>
               <a
                 href=""
-                className="text-base no-underline link hover:link-primary"
+                className="text-base font-bold no-underline link hover:link-primary"
               >
                 Pricing
               </a>
@@ -101,7 +101,7 @@ const Navbar = ({cartItem}) => {
             <li>
               <a
                 href=""
-                className="text-base no-underline link hover:link-primary"
+                className="text-base font-bold no-underline link hover:link-primary"
               >
                 Testimonials
               </a>
@@ -109,7 +109,7 @@ const Navbar = ({cartItem}) => {
             <li>
               <a
                 href=""
-                className="text-base no-underline link hover:link-primary"
+                className="text-base font-bold no-underline link hover:link-primary"
               >
                 FAQ
               </a>
@@ -120,14 +120,17 @@ const Navbar = ({cartItem}) => {
           <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
             <div className="indicator">
               <LucideShoppingCart />{" "}
-              <span className="badge badge-sm indicator-item">{cartItem.length}</span>
+              {
+              cartItem.length > 0 && (
+              <span className="badge badge-sm indicator-item bg-red-500 text-white rounded-full">{cartItem.length}</span>
+              )}
             </div>
           </div>
           <div className="gap-4 items-center hidden md:flex ">
-            <a className="font-normal text-base no-underline link hover:link-primary">
+            <a className="text-base font-bold no-underline link hover:link-primary">
               Login
             </a>
-            <a className="btn text-white rounded-full font-normal bg-linear-to-l from-[#9514fa] to-[#4f39f6] hover:bg-linear-to-r from-[#9514fa] to-[#4f39f6] text-base">
+            <a className="btn text-white p-6 rounded-full font-normal bg-linear-to-l from-[#9514fa] to-[#4f39f6] hover:bg-linear-to-r from-[#9514fa] to-[#4f39f6] text-base">
               Get Started
             </a>
           </div>
