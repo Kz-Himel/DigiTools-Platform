@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Card = ({ item, handleAddToCart  }) => {
+const Card = ({ item, handleAddToCart }) => {
 
   // For Buy now button
   const [isBuyNow, setIsBuyNow] = useState(false);
@@ -35,7 +35,7 @@ const Card = ({ item, handleAddToCart  }) => {
         <div className="p-4 border border-neutral-100 rounded-full w-fit bg-gray-50">
           <img 
             className="h-10 w-10 object-contain" 
-            src={`https://api.dicebear.com/7.x/shapes/svg?seed=${item.name}`} 
+            src={item.image} 
             alt={item.name} 
           />
         </div>
