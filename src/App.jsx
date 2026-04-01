@@ -3,7 +3,7 @@ import Navbar from './components/Navbar/Navbar'
 import Banner from './components/Banner/Banner'
 import Stats from './components/Stats/Stats'
 import ToggleTabs from './components/Toggle/Toggle'
-import { Suspense, useState } from 'react';
+import { Suspense, useState, useEffect } from 'react';
 import Cards from './components/AllProducts/Cards';
 import Cart from './components/AllProducts/Cart'
 
@@ -16,7 +16,14 @@ function App() {
   const [activeTab, setActiveTab] = useState("products");
   const [cartItem, setCartItem] = useState([]);
 
-  const dataPromise = dataFetching();
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+  dataFetching().then(data => {
+    const updated = data.map(item => ({ ...item, purchased: false }));
+    setProducts(updated);
+  });
+}, []);
 
   const handleAddToCart = (product) => {
   setCartItem((prev) => [...prev, product]);
@@ -47,7 +54,7 @@ function App() {
       <h1 className="loading loading-ring loading-xl"></h1>
     </div>}>
       <Cards 
-        dataPromise={dataPromise}
+        products={products}
         handleAddToCart={handleAddToCart}
         cartItem={cartItem}
       />

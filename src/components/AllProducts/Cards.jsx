@@ -1,9 +1,6 @@
-import React, { use } from "react"; 
 import Card from "./Card";
 
-const Cards = ({ dataPromise, handleAddToCart, cartItem }) => {
-  
-  const products = use(dataPromise);
+const Cards = ({ products, handleAddToCart }) => {
 
   return (
     <div className="container mx-auto p-8 bg-[#fdfdfd] rounded-2xl">
@@ -14,7 +11,6 @@ const Cards = ({ dataPromise, handleAddToCart, cartItem }) => {
           key={item.id} 
           item={item}
           handleAddToCart={handleAddToCart}
-          cartItem={cartItem}
         />
         ))
         }
