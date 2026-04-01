@@ -1,94 +1,90 @@
 [
   {
     "id": 1,
-    "name": "Entry-Level Resume Kit",
-    "description": "Essential templates and guides for students and freshers to kickstart their career.",
-    "price": 7,
-    "period": "one-time",
-    "tag": "new",
-    "tagType": "new",
-    "features": ["15+ Professional templates", "Word & PDF formats", "Step-by-step guide"],
-    "image": "../src/assets/products/cv.png"
+    "name": "AI Writing Pro",
+    "description": "Generate high-quality content, blogs, and marketing copy in seconds with advanced AI.",
+    "price": 29,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["Unlimited AI generations", "50+ writing templates", "Grammar checker"],
+    "image": "../src/assets/products/writing_23274001.png"
   },
   {
     "id": 2,
-    "name": "Expert Resume Builder",
-    "description": "AI-powered resume builder with smart keyword suggestions for ATS success.",
-    "price": 24,
-    "period": "monthly",
+    "name": "Design Templates Pack",
+    "description": "2000+ premium templates for social media, presentations, and marketing materials.",
+    "price": 49,
+    "period": "one-time",
     "tag": "popular",
     "tagType": "popular",
-    "features": ["Smart ATS scanner", "Custom cover letters", "Multi-language support"],
-    "image": "../src/assets/products/pro-cv.png"
-  },
-  {
-    "id": 3,
-    "name": "Job Hunter Bundle",
-    "description": "An all-in-one package to dominate your job search and ace every interview.",
-    "price": 55,
-    "period": "one-time",
-    "tag": "best seller",
-    "tagType": "best seller",
-    "features": [
-      "Job application tracker",
-      "Mock interview videos",
-      "Salary negotiation tips"
-    ],
-    "image": "../src/assets/products/CareerBoostPack.png"
-  },
-  {
-    "id": 4,
-    "name": "Showcase Portfolio Pro",
-    "description": "Build a stunning personal brand website with our intuitive no-code editor.",
-    "price": 14,
-    "period": "monthly",
-    "tag": "popular",
-    "tagType": "popular",
-    "features": ["SEO optimization", "SSL certificate included", "Unlimited hosting"],
-    "image": "../src/assets/products/PortfolioWebsiteBuilder.png"
-  },
-  {
-    "id": 5,
-    "name": "Gig Economy Toolkit",
-    "description": "Streamline your freelance business with automated billing and client portals.",
-    "price": 35,
-    "period": "yearly",
-    "tag": "best seller",
-    "tagType": "best seller",
-    "features": ["Smart tax calculator", "Task kanban board", "Contract templates"],
-    "image": "../src/assets/products/FreelancerToolkit.png"
-  },
-  {
-    "id": 6,
-    "name": "Creative UI Assets",
-    "description": "A massive collection of premium UI kits, graphics, and high-quality design elements.",
-    "price": 45,
-    "period": "one-time",
-    "tag": "new",
-    "tagType": "new",
-    "features": ["Vector illustrations", "3D icon library", "Sketch & Adobe XD files"],
+    "features": ["2000+ templates", "Monthly updates", "Commercial license"],
     "image": "../src/assets/products/design-tool.png"
   },
   {
-    "id": 7,
-    "name": "Full-Stack Dev Suite",
-    "description": "Curated collection of boilerplate code and UI components for modern developers.",
-    "price": 18,
+    "id": 3,
+    "name": "Premium Stock Assets",
+    "description": "Access millions of royalty-free photos, videos, and graphics for your projects.",
+    "price": 19,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["10M+ assets", "Commercial use", "No attribution"],
+    "image": "../src/assets/products/operation.png"
+  },
+  {
+    "id": 4,
+    "name": "Automation Toolkit",
+    "description": "Automate repetitive tasks and streamline your workflow with powerful tools.",
+    "price": 79,
     "period": "monthly",
     "tag": "popular",
     "tagType": "popular",
-    "features": ["Next.js components", "Tailwind CSS presets", "Git hooks library"],
-    "image": "../src/assets/products/DeveloperProPack.png"
+    "features": ["50+ automations", "API access", "Custom workflows"],
+    "image": "../src/assets/products/social-media.png"
+  },
+  {
+    "id": 5,
+    "name": "Resume Builder Pro",
+    "description": "Create professional resumes and cover letters that land interviews.",
+    "price": 15,
+    "period": "one-time",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["100+ templates", "ATS optimization", "Export to PDF"],
+    "image": "../src/assets/products/pro-cv.png"
+  },
+  {
+    "id": 6,
+    "name": "Social Media Content Kit",
+    "description": "Complete toolkit for creating engaging social media content across all platforms.",
+    "price": 39,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["5000+ assets", "Scheduler included", "Analytics dashboard"],
+    "image": "../src/assets/products/portfolio.png"
+  },
+  {
+    "id": 7,
+    "name": "AI Chat Assistant",
+    "description": "Smart AI chatbot for instant replies, customer support, and automation.",
+    "price": 25,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["24/7 responses", "Multi-language support", "Easy integration"],
+    "image": "../src/assets/products/ai-assistant.png"
   },
   {
     "id": 8,
-    "name": "Founder's SaaS Boilerplate",
-    "description": "The ultimate foundation for your next big idea with pre-built user management.",
-    "price": 129,
+    "name": "Website Builder Pro",
+    "description": "Build stunning websites with drag-and-drop tools and modern templates.",
+    "price": 59,
     "period": "one-time",
     "tag": "best seller",
     "tagType": "best seller",
-    "features": ["Stripe integration", "Admin control panel", "Email templates"],
-    "image": "../src/assets/products/Saas.png"
+    "features": ["Drag & drop builder", "SEO optimized", "Fast hosting"],
+    "image": "../src/assets/products/cv.png"
   }
 ]
