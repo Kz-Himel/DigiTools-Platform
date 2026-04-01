@@ -1,7 +1,7 @@
 import { LucideShoppingCart } from "lucide-react";
 import React from "react";
 
-const Navbar = () => {
+const Navbar = ({cartItem}) => {
   return (
     <div className="container mx-auto">
       <div className="navbar bg-base-100 pt-6">
@@ -112,7 +112,7 @@ const Navbar = () => {
           <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
             <div className="indicator">
               <LucideShoppingCart />{" "}
-              <span className="badge badge-sm indicator-item">8</span>
+              <span className="badge badge-sm indicator-item">{cartItem.length}</span>
             </div>
           </div>
           <div className="gap-4 items-center hidden md:flex ">

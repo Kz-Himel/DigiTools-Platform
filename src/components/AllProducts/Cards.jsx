@@ -1,6 +1,6 @@
 import Card from "./Card";
 
-const Cards = ({ products, handleAddToCart }) => {
+const Cards = ({ products, handleAddToCart, cartItem }) => {
 
   return (
     <div className="container mx-auto p-8 bg-[#fdfdfd] rounded-2xl">
@@ -11,6 +11,7 @@ const Cards = ({ products, handleAddToCart }) => {
           key={item.id} 
           item={item}
           handleAddToCart={handleAddToCart}
+          cartItem={cartItem}
         />
         ))
         }

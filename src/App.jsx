@@ -26,13 +26,26 @@ function App() {
 }, []);
 
   const handleAddToCart = (product) => {
+
+    // Check if any duplaicate card there
+  const exists = cartItem.find(item => item.id === product.id);
+  if (exists) return;
+
+  // Add card to carts
   setCartItem((prev) => [...prev, product]);
+
+  // If card is there then give a alert
+  setProducts(prev =>
+    prev.map(p =>
+      p.id === product.id ? { ...p, purchased: true } : p
+    )
+  );
 };
 
   return (
     <>
     {/* Navbar */}
-    <Navbar />
+    <Navbar cartItem={cartItem}/>
 
     {/* Banner */}
     <Banner />
