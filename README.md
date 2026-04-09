@@ -34,7 +34,8 @@ Digitools Platform is an all-in-one hub for useful digital tools. It provides a 
 - ⚡ Fast and responsive UI  
 - 🧰 Multiple digital tools in one platform  
 - 📱 Fully responsive (Mobile & Desktop)  
-- 🌐 API-based dynamic data loading  
+- 🌐 API-based dynamic data loading
+- ✨ Add tools in cart & delete or proceed functionality
 
 ---
 ### JSON  
@@ -58,7 +59,7 @@ git clone https://github.com/your-username/digitools-client.git
 
 ### Go to project directory
 ```bash
-cd digitools-client
+cd DigiTools-Platform
 ```
 
 ### Install dependencies
