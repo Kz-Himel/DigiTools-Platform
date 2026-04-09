@@ -1,18 +1,86 @@
-🌐 DigiTools Platform  
+# 🚀 Digitools Platform
 
-📄 DigiTools Platform is a modern web application that offers a collection of premium digital tools designed to boost productivity, creativity, and efficiency—all in one place. Explore, use, and manage digital tools seamlessly with an intuitive interface.  
+---  
 
-🛠️ Technologies Used  
-React.js + Vite – Fast, reactive, and modern frontend  
-Tailwind CSS – Utility-first styling for responsive design  
-DaisyUI – Ready-to-use UI components  
-Lucide-React – Clean and lightweight icons  
-React Toastify – Beautiful toast notifications  
-JSON - For product data
+## 📖 Overview
+Digitools Platform is an all-in-one hub for useful digital tools. It provides a clean user interface, fast performance, and a smooth user experience.
 
-✨ Features  
-Premium Digital Tools Collection – Access a variety of useful tools for productivity and creativity.  
-Intuitive and Responsive UI – Built with Tailwind CSS & DaisyUI for smooth experience on all devices.  
-Easy Navigation with Icons – Lucide-React icons enhance usability and visual appeal.  
-Real-time Notifications – React Toastify keeps users informed about actions like adding or removing tools.  
-Fast and Lightweight – Powered by React + Vite for blazing-fast performance.
+---
+
+## 🌐 Live Preview
+
+👉 **Click here to explore the project:**  
+🔗 https://digitools-platform-kzhimel.netlify.app/
+
+---
+
+## 🛠️ Technologies Used
+
+### Frontend
+- React.js   
+- Tailwind CSS
+- Daisy UI
+- Lucid React
+- React Toastify  
+
+### Others
+- Github (Repo)  
+- Netlify (Deployment)  
+
+---
+
+## ✨ Main Features
+ 
+- ⚡ Fast and responsive UI  
+- 🧰 Multiple digital tools in one platform  
+- 📱 Fully responsive (Mobile & Desktop)  
+- 🌐 API-based dynamic data loading  
+
+---
+### JSON  
+{
+  "react": "^18.x",
+  "tailwindcss": "^3.x",
+  "daisyui": "^4.x",
+  "lucide-react": "^0.x",
+  "react-toastify": "^9.x"
+}
+```
+
+---
+
+## ⚙️ Run Locally
+
+### Clone the project
+```bash
+git clone https://github.com/your-username/digitools-client.git
+```
+
+### Go to project directory
+```bash
+cd digitools-client
+```
+
+### Install dependencies
+```bash
+npm install
+```
+
+### Run the project
+```bash
+npm run dev
+```
+
+---
+
+## 🌍 Live Links
+
+- 🔗 Live Website: https://digitools-platform-kzhimel.netlify.app/  
+- 💻 Github Repository: https://github.com/Kz-Himel/DigiTools-Platform  
+
+---
+
+## 👨‍💻 Author
+
+**Khayruzzaman Himel**  
+📧 Email: kzhimel129@gmail.com  
